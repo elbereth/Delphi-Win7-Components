@@ -1,0 +1,43 @@
+package dwWin7Controls_7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  dwCustomDestinationList in '..\..\dwCommon\dwCustomDestinationList.pas',
+  dwObjectArray in '..\..\dwCommon\dwObjectArray.pas',
+  dwTaskbarComponents in '..\..\dwCommon\dwTaskbarComponents.pas',
+  dwTaskbarList in '..\..\dwCommon\dwTaskbarList.pas',
+  dwJumpLists in '..\..\dwJumpLists\dwJumpLists.pas',
+  dwShellItem in '..\..\dwJumpLists\dwShellItem.pas',
+  dwOverlayIcon in '..\..\dwOverlayIcon\dwOverlayIcon.pas',
+  dwProgressBar in '..\..\dwProgressBar\dwProgressBar.pas',
+  dwTaskbarThumbnails in '..\..\dwTaskbarThumbnails\dwTaskbarThumbnails.pas',
+  uWin7Registration in '..\..\uWin7Registration.pas';
+
+end.
